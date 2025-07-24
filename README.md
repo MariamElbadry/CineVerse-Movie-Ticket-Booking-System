@@ -6,58 +6,63 @@ Developed by a team of five first-year university students, CineVerse showcases 
 
 ## Project Structure
 
-- **cs112/**: Root project folder.
-  - **data/**: Stores the application's data files.
-    - `cinema_data.xlsx`: Excel file with user data (columns: id, username, password).
-    - `Movies.xlsx`: Excel file with movie data (columns: name, imagePath, imagePath2, imagePath3, imagePath4, imagePath5, rate, description, showtimes, price).
-    - `Booking.xlsx`: Excel file with booking data (columns: Showtime, Seat, Movie Name, Price, username, Status).
-      
-  - **Pictures/**: Directory for GUI images.
-    - `images/`: General images (e.g., logo.png, imdb.png).
-    - `pics/`: Movie-related images.
-    - `categoral images/`: Category-specific images (subfolders: Marvel, Anime, DC, Disney, Book Adaptions).
-      
-  - **Src/**: Contains C++ source files.
-    - `Adaptations.cpp`: Implementation for Book Adaptions category functionality.
-    - `Anime.cpp`: Implementation for Anime category functionality.
-    - `DC.cpp`: Implementation for DC category functionality.
-    - `disney.cpp`: Implementation for Disney category functionality.
-    - `homeForm.cpp`: Implementation for the home window.
-    - `loginForm.cpp`: Implementation for the login window and application entry point.
-    - `profileForm.cpp`: Implementation for the user profile and booking history.
-    - `MovieDetailForm.cpp`: Implementation for the movie details and booking form.
-    - `signinForm.cpp`: Implementation for the user registration form.
-    - `main.cpp`: Application entry point.
-    - `Marvel.cpp`: Movie data management implementation.
-    - `ExcelManger.cpp`: Excel data handling implementation.
-      
-  - **include/**: Contains header files.
-    - `Adaptations.h`: Book Adaptions category window.
-    - `Anime.h`: Anime category window.
-    - `DC.h`: DC category window.
-    - `disney.h`: Disney category window.
-    - `MovieDetailForm.h`: Movie details and booking form.
-    - `profileForm.h`: User profile and booking history form.
-    - `signinForm.h`: User registration form.
-    - `users.h`: User class definition.
-    - `loginForm.h`: Login form.
-    - `Marvel.h`: Movie class and data management.
-    - `ExcelManger.h`: Excel data handling utilities.
-      
-  - **Resources/**: Contains resource files for UI elements.
-    - `Adaptations.resx`: Resources for Book Adaptions category window.
-    - `Anime.resx`: Resources for Anime category window.
-    - `DC.resx`: Resources for DC category window.
-    - `disney.resx`: Resources for Disney category window.
-    - `MovieDetailForm.resx`: Resources for movie details form.
-    - `profileForm.resx`: Resources for profile form.
-    - `signinForm.resx`: Resources for sign-up form.
-    - `loginForm.resx`: Resources for login form.
-    - `Marvel.resx`: Resources for movie UI elements.
-    - `ExcelManger.resx`: Resources for Excel utilities.
-      
-- **cs112.sln**: Visual Studio solution file.
-- **README.md**: Project documentation.
+```
+cs112/
+├── data/                           # Stores application's data files
+│   ├── cinema_data.xlsx            # Excel file with user data (columns: id, username, password)
+│   ├── Movies.xlsx                 # Excel file with movie data (columns: name, imagePath, imagePath2, imagePath3, imagePath4, imagePath5, rate, description, showtimes, price)
+│   └── Booking.xlsx                # Excel file with booking data (columns: Showtime, Seat, Movie Name, Price, username, Status)
+├── Pictures/                       # Directory for GUI images
+│   ├── images/                     # General images for the application
+│   │   ├── logo.png                # Application logo
+│   │   ├── imdb.png                # IMDb icon for UI
+│   │   └── etc/                    # Other general images
+│   ├── pics/                       # Movie-related images
+│   └── categoral images/           # Category-specific images
+│       ├── Marvel/                 # Images for Marvel movies
+│       ├── Anime/                  # Images for Anime movies
+│       ├── DC/                     # Images for DC movies
+│       ├── Disney/                 # Images for Disney movies
+│       └── Book Adaptions/         # Images for Book Adaptions
+├── Src/                            # Contains C++ source files
+│   ├── Adaptations.cpp             # Implementation for Book Adaptions category functionality
+│   ├── Anime.cpp                   # Implementation for Anime category functionality
+│   ├── DC.cpp                      # Implementation for DC category functionality
+│   ├── disney.cpp                  # Implementation for Disney category functionality
+│   ├── homeForm.cpp                # Implementation for the home window
+│   ├── loginForm.cpp               # Implementation for the login window and application entry point
+│   ├── profileForm.cpp             # Implementation for the user profile and booking history
+│   ├── MovieDetailForm.cpp         # Implementation for the movie details and booking form
+│   ├── signinForm.cpp              # Implementation for the user registration form
+│   ├── main.cpp                    # Application entry point
+│   ├── Marvel.cpp                  # Movie data management implementation
+│   └── ExcelManger.cpp             # Excel data handling implementation
+├── include/                        # Contains header files
+│   ├── Adaptations.h               # Header for Book Adaptions category window
+│   ├── Anime.h                     # Header for Anime category window
+│   ├── DC.h                        # Header for DC category window
+│   ├── disney.h                    # Header for Disney category window
+│   ├── MovieDetailForm.h           # Header for movie details and booking form
+│   ├── profileForm.h               # Header for user profile and booking history form
+│   ├── signinForm.h                # Header for user registration form
+│   ├── users.h                     # User class definition
+│   ├── loginForm.h                 # Header for login form
+│   ├── Marvel.h                    # Movie class and data management
+│   └── ExcelManger.h               # Excel data handling utilities
+├── Resources/                      # Contains resource files for UI elements
+│   ├── Adaptations.resx            # Resources for Book Adaptions category window
+│   ├── Anime.resx                  # Resources for Anime category window
+│   ├── DC.resx                     # Resources for DC category window
+│   ├── disney.resx                 # Resources for Disney category window
+│   ├── MovieDetailForm.resx        # Resources for movie details form
+│   ├── profileForm.resx            # Resources for profile form
+│   ├── signinForm.resx             # Resources for sign-up form
+│   ├── loginForm.resx              # Resources for login form
+│   ├── Marvel.resx                 # Resources for movie UI elements
+│   └── ExcelManger.resx            # Resources for Excel utilities
+├── cs112.sln                       # Visual Studio solution file
+└── README.md                       # Project documentation
+```
 
 ## Features
 
